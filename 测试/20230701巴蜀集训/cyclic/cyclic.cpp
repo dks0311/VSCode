@@ -15,7 +15,7 @@ namespace _default{
     #define ef(i, u) for(int i = head[(u)]; i; i = ne[i])
     #define sett(x, y) memset(x, y, sizeof x)
     #define copy(x, y) memcpy(x, y, sizeof x)
-    const int MOD = 1e9 + 7, INF = 1e18;
+    const int MOD = 1e9 + 7, INF = 0x3f3f3f3f;
     const DB EPS = 1e-8;
     template<typename T> inline T read(){
         T s = 0; int f = 0; char ch = getchar();
@@ -103,6 +103,6 @@ signed main(){
 	n = read<int>(), m = read<int>(), k = read<int>();
 	xxs();
 	uF(i, 1, k) if(k % i == 0) kk[++ tot] = i;
-	write(Calc(n, m, k));
+	write(Calc(n, m, k), "\n");
     lovely _lzy_;
 }
