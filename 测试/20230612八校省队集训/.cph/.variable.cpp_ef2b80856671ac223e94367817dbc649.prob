@@ -1,0 +1,1 @@
+{"name":"Local: variable","url":"d:\\VSCode\\测试\\20230612八校省队集训\\variable.cpp","tests":[{"id":1686549394871,"input":"1\n3 1 1 1\n1 2 3 1 1 1 1 1 1\n1 2 2","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\测试\\20230612八校省队集训\\variable.cpp","group":"local","local":true}

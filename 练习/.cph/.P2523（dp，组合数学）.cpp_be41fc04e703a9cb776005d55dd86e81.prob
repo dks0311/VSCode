@@ -1,0 +1,1 @@
+{"name":"Local: P2523（dp，组合数学）","url":"d:\\VSCode\\P2523（dp，组合数学）.cpp","tests":[{"id":1685409278669,"input":"2\n4 3 10\n1 2 2 1 3 1\n10 3 8882\n7 9 2 9 5 10","output":"YES 4\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P2523（dp，组合数学）.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: P4404（贪心）","url":"d:\\VSCode\\P4404（贪心）.cpp","tests":[{"id":1685281423558,"input":"6 2\n1 2 3 1 2 3","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P4404（贪心）.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: P3899（长链剖分，dp）","url":"d:\\VSCode\\练习\\P3899（长链剖分，dp）.cpp","tests":[{"id":1686550340020,"input":"5 3\n1 2\n1 3\n2 4\n4 5\n2 2\n4 1\n2 3","output":"3\n1\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\练习\\P3899（长链剖分，dp）.cpp","group":"local","local":true}

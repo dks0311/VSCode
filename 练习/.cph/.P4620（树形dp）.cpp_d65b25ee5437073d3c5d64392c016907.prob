@@ -1,0 +1,1 @@
+{"name":"Local: P4620（树形dp）","url":"d:\\VSCode\\P4620（树形dp）.cpp","tests":[{"id":1686116405581,"input":"2\n3 1 2 3 11111 22222 33333 1 1\n1 5\n2 3\n3 6\n7 2 3 7 11111 22222 33333 1 1\n6 9\n4 5\n3 7\n5 2\n2 4\n1 7\n9 6","output":"3\n14"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P4620（树形dp）.cpp","group":"local","local":true}

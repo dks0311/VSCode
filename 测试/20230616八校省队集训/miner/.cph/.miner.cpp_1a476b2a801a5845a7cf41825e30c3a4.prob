@@ -1,0 +1,1 @@
+{"name":"Local: miner","url":"d:\\VSCode\\测试\\20230616八校省队集训\\miner\\miner.cpp","tests":[{"id":1686887407426,"input":"3 8 50\n3 3\n4 2\n6 4\n2 25\n2 8\n2 7\n2 12\n1 2\n2 25\n1 3\n2 40","output":"5\n2\n0\n3\n4\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\测试\\20230616八校省队集训\\miner\\miner.cpp","group":"local","local":true}
