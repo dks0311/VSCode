@@ -1,1 +1,0 @@
-{"name":"Local: P3272（插头dp）","url":"d:\\VSCode\\P3272（插头dp）.cpp","tests":[{"id":1685664026490,"input":"2 2\n*_\n__","output":"1"},{"id":1685664033168,"input":"3 3\n___\n_*_\n___","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P3272（插头dp）.cpp","group":"local","local":true}

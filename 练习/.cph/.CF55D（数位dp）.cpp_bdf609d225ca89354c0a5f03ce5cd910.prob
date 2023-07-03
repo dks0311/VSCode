@@ -1,1 +1,0 @@
-{"name":"Local: CF55D（数位dp）","url":"d:\\VSCode\\CF55D（数位dp）.cpp","tests":[{"id":1684913857812,"input":"1\n1 9","output":"9"},{"id":1684913873452,"input":"1\n12 15","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\CF55D（数位dp）.cpp","group":"local","local":true}

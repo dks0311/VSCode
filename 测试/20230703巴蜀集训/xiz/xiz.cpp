@@ -45,8 +45,8 @@ int a[N], b[N], pa[N], pb[N], p[N];
 int ne[N];
 vector<int> ans;
 signed main(){
-    freopen("xiz.in", "r", stdin);
-    freopen("xiz.out", "w", stdout);
+    // freopen("xiz.in", "r", stdin);
+    // freopen("xiz.out", "w", stdout);
     T = read<int>(), C = read<int>();
     while(T --){
         n = read<int>(), m = read<int>();

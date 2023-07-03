@@ -1,1 +1,0 @@
-{"name":"Local: P3278（平衡树）","url":"d:\\VSCode\\P3278（平衡树）.cpp","tests":[{"id":1685853764836,"input":"6\nadd 0 1 7\nquery 1\nmul 0 1 7\nquery 2\nmulx 0 1\nquery 3","output":"14\n147\n588"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P3278（平衡树）.cpp","group":"local","local":true}

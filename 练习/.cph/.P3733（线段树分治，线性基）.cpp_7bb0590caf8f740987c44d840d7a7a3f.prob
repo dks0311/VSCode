@@ -1,1 +1,0 @@
-{"name":"Local: P3733（线段树分治，线性基）","url":"d:\\VSCode\\P3733（线段树分治，线性基）.cpp","tests":[{"id":1686121398904,"input":"4 4 3\n1 2 1110\n1 3 10\n2 4 1110\n2 3 100\nAdd 3 4 11\nChange 1 101\nCancel 1","output":"1000\n1001\n1111\n1000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P3733（线段树分治，线性基）.cpp","group":"local","local":true}

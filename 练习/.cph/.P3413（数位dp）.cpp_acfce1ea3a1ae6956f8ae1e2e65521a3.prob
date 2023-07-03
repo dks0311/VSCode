@@ -1,1 +1,0 @@
-{"name":"Local: P3413（数位dp）","url":"d:\\VSCode\\P3413（数位dp）.cpp","tests":[{"id":1685017469828,"input":"1 100","output":"10"},{"id":1685017477337,"input":"100 1000","output":"253"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P3413（数位dp）.cpp","group":"local","local":true}

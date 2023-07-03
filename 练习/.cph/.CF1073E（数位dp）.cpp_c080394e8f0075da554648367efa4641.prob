@@ -1,1 +1,0 @@
-{"name":"Local: CF1073E（数位dp）","url":"d:\\VSCode\\CF1073E（数位dp）.cpp","tests":[{"id":1684930883631,"input":"10 50 2","output":"1230"},{"id":1684930900142,"input":"1 2345 10","output":"2750685"},{"id":1684930910782,"input":"101 154 2","output":"2189"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\CF1073E（数位dp）.cpp","group":"local","local":true}

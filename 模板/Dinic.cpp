@@ -16,7 +16,7 @@ namespace _default{
     #define ef(i, u) for(int i = head[(u)]; i; i = ne[i])
     #define sett(x, y) memset(x, y, sizeof x)
     #define copy(x, y) memcpy(x, y, sizeof x)
-    const int MOD = 1e9 + 7;
+    const int MOD = 1e9 + 7, INF = 1e18;
     const DB EPS = 1e-8;
     template<typename T> inline T read(){
         T s = 0; int f = 0; char ch = getchar();
@@ -39,41 +39,55 @@ namespace _default{
     int cmp(DB a, DB b){if(fabs(a - b) < EPS) return 0; return a - b > EPS ? 1 : -1;}
 }
 using namespace _default;
-const int N = 2e5 + 5;
-const DB le10 = log(10);
-int n, m, a[N];
-DB b[N];
-DB s[N];
-int Calc(DB x){
-    DB t = floor(x / le10 + 1e-8);
-    return (int)(exp(x - t * le10) + 1e-8);
+const int N = 205, M = 1e4 + 5;
+int n, m, s, t;
+int head[N], ne[M], to[M], idx = 1;
+int flw[M];
+int hgt[N], cur[N];
+void Add_Edge(int u, int v, int w){
+    to[++ idx] = v, ne[idx] = head[u], head[u] = idx;
+    flw[idx] = w;
+}
+bool BFS(){
+    memset(hgt, -1, sizeof hgt);
+    queue<int> q;
+    q.push(s);
+    hgt[s] = 0;
+    while(!q.empty()){
+        int u = q.front(); q.pop();
+        cur[u] = head[u];
+        ef(i, u){
+            int v = to[i];
+            if(!flw[i] || hgt[v] != -1) continue;
+            hgt[v] = hgt[u] + 1;
+            q.push(v);
+        }
+    }
+    return hgt[t] != -1;
+}
+int DFS(int u, int ori){
+    if(u == t) return ori;
+    int rest = ori;
+    for(int i = cur[u]; i; i = ne[i]){
+        int v = to[cur[u] = i];
+        if(!rest || !flw[i] || hgt[v] != hgt[u] + 1) continue;
+        int delta = DFS(v, min(rest, flw[i]));
+        flw[i] -= delta, flw[i ^ 1] += delta;
+        rest -= delta;
+    }
+    return ori - rest;
+}
+int Dinic(){
+    int res = 0;
+    while(BFS()) res += DFS(s, INF);
+    return res;
 }
 signed main(){
-    // freopen("seq.in", "r", stdin);
-    // freopen("seq.out", "w", stdout);
-    n = read<int>(), m = read<int>();
-    uF(i, 1, n) a[i] = read<int>(), b[i] = log(a[i]);
-    if(n <= 1000 && m <= 1000){
-        while(m --){
-            int opt = read<int>(), l = read<int>(), r = read<int>();
-            if(opt == 1){
-                int t = read<int>();
-                if(t) sort(b + l, b + r + 1);
-                else sort(b + l, b + r + 1, [](DB a, DB b){return a > b;});
-            }
-            else{
-                DB res = 0;
-                uF(i, l, r) res += b[i];
-                write(Calc(res), "\n");
-            }
-        }
+    n = read<int>(), m = read<int>(), s = read<int>(), t = read<int>();
+    uF(i, 1, m){
+        int u = read<int>(), v = read<int>(), w = read<int>();
+        Add_Edge(u, v, w); Add_Edge(v, u, 0);
     }
-    else{
-        uF(i, 1, n) s[i] = s[i - 1] + b[i];
-        while(m --){
-            int opt = read<int>(), l = read<int>(), r = read<int>();
-            write(Calc(s[r] - s[l - 1]), "\n");
-        }
-    }
+    write(Dinic(), "\n");
     lovely _lzy_;
 }

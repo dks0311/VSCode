@@ -1,1 +1,0 @@
-{"name":"Local: P2462（DAG）","url":"d:\\VSCode\\P2462（DAG）.cpp","tests":[{"id":1685499436784,"input":"ab\narc\narco\nbar\nbran\ncarbon\ncarbons\ncobra\ncrab\ncrayon\nnarc","output":"6\nab\nbar\ncrab\ncobra\ncarbon\ncarbons"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VSCode\\P2462（DAG）.cpp","group":"local","local":true}
