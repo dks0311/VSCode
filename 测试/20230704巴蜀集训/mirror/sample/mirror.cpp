@@ -122,7 +122,7 @@ void BFS(){
     }
 }
 signed main(){
-    // freopen("ex_mirror2.in", "r", stdin);
+    freopen("ex_mirror2.in", "r", stdin);
     // freopen("mirror.out", "w", stdout);
     n = read<int>(), m = read<int>();
     uF(i, 1, m)
